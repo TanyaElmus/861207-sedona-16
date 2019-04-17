@@ -1,36 +1,43 @@
-@import "content.less";
-@align: center;
-@base-color: #81b3d2;
-@text: white;
+@import "variable.less";
 
 .reasons__title {
-    color:#333333;
-    font-size: 14px;
-    line-height: 26px;
-    text-align: @align;
-    text-transform: uppercase;
+  color: #333333;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 .reasons__item {
-    list-style: none;
+  list-style: none;
 }
 
 .reasons__number {
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    text-align: @align;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 .reasons__item-bg {
-background-color: @base-color;
-width: 320px;
+  background-color: @base-color;
+  width: 320px;
 }
 
 .reasons__discription {
-    color:#333333;
-    font-size: 14px;
-    line-height: 26px;
-    text-transform: uppercase;
-    text-align: @align;
+  color: #333333;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.reasons__item--bg {
+  background-color: @base-color;
+  color: white;
+
+  .reasons__discription {
+    color: inherit;
+  }
+}
+
+.reasons__slogan {
+  color: inherit;
 }
