@@ -3,4 +3,31 @@
   background: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+
+.page-header__text-image {
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__text-image {
+    align-items: center;
+    justify-content: center;
+  }
 }
