@@ -87,19 +87,32 @@
     width: 33.3%;
     margin-right: 200%;
     position: relative;
+    flex-shrink: 0;
+    padding-top: 45px;
   }
 
   .reasons__image {
     position: absolute;
     left: 100%;
     width: 200%;
+    top: 0;
   }
 
   .reasons__item {
     width: (100%/3);
   }
 
-  .reasons__discription {
-    padding: 0 50px;
+  // .reasons__discription {
+  //   padding: 0 50px;
+  // }
+}
+
+@media (min-width: @desktop-width) {
+  .reasons__item--bg {
+    width: 33.3%;
+    margin-right: 200%;
+    position: relative;
+    flex-shrink: 0;
+    padding-top: 45px;
   }
 }

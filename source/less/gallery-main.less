@@ -1,13 +1,21 @@
 @import "page-title.less";
 
+.gallery-main {
+  padding: 0 20px;
+}
+
 .gallery__list__description {
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
 }
 
 .gallery__item {
   list-style: none;
+  width: 100%;
+  padding: 0;
 }
 
 .gallery__item-author-text {
@@ -15,9 +23,49 @@
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 800;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 14px;
 }
 
 .gallery__item-author-name {
   font-size: 14px;
   line-height: 24px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery__item-like--number {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery-main {
+    padding: 0 60px;
+  }
+
+  .gallery__title {
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+  }
+
+  .gallery__item {
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: (100/2);
+    flex-grow: 1;
+  }
+
+  .photo-autor--sunset {
+    width: 100%;
+  }
 }
