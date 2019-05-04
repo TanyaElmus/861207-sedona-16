@@ -6,6 +6,11 @@
   margin-bottom: 45px;
 }
 
+.page-header__logo {
+  position: absolute;
+  top: 0;
+}
+
 @media (min-width: @tablet-width) {
   .page-header__image {
     width: 100%;
@@ -25,14 +30,15 @@
   padding: 0 20px;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .page-header__text-image {
     align-items: center;
     justify-content: center;
   }
 
-  .page-header__city-logo {
+  .page-header__logo {
     position: absolute;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
