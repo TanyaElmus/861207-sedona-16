@@ -2,8 +2,8 @@
 @import "page-header.less";
 @import "main-nav.less";
 @import "site-list.less";
-@import "page-main.less";
 @import "page-title.less";
+@import "page-main.less";
 @import "reasons.less";
 @import "recomend.less";
 @import "page-footer.less";
@@ -13,4 +13,41 @@
 
 body {
   font-family: "PT Sans", "Arial", sans-serif;
+  min-width: @mobile-width;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

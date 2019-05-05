@@ -1,10 +1,58 @@
-.reasons__recomend {
+.recomend {
   list-style: none;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
 }
 
-.reasons__recomend-description {
+.recomend-title {
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 18px;
+}
+
+.recomend-description {
   color: #333333;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+  padding-left: 30px;
+  margin: 0;
+}
+
+.recomend-icon {
+  position: absolute;
+  content: "";
+  left: 0;
+}
+
+.recomend__item {
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .recomend__item {
+    width: (100%/3);
+    text-align: center;
+  }
+
+  .recomend-icon {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .recomend-description {
+    text-align: center;
+  }
+
+  .recomend-title {
+    text-align: center;
+    margin-bottom: 35px;
+  }
 }
