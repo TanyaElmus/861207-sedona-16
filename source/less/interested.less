@@ -1,0 +1,81 @@
+@import "variable.less";
+
+.interested__title {
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0;
+  margin-bottom: 18px;
+  font-weight: 800;
+}
+
+.interested__discription {
+  color: #333333;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+
+.interested__button {
+  display: block;
+  justify-content: center;
+  font-size: 21px;
+  line-height: 26px;
+  color: #fff;
+  border:none;
+  padding: 16px 20px;
+  font-weight: 800;
+  width: 280px;
+  text-transform: uppercase;
+  background-color: @base-color;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.interested__map {
+  background: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 35px;
+  height: 350px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .interested__title {
+    color: #000000;
+    font-size: 30px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .interested__discription {
+    padding: 0 185px;
+    margin: 0;
+    margin-bottom: 42px;
+  }
+
+  .interested__button {
+    width: 455px;
+    padding: 18px 18px;
+    margin-bottom: 55px;
+  }
+
+  .interested__map {
+    background: url("../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 35px;
+    height: 350px;
+  }
+}
+

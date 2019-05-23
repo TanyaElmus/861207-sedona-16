@@ -4,27 +4,30 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
+  padding-top: 36px;
 }
 
 .recomend-title {
   text-align: left;
   margin-left: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .recomend-description {
   color: #333333;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   text-transform: uppercase;
   padding-left: 30px;
   margin: 0;
+  margin-bottom: 31px;
 }
 
 .recomend-icon {
   position: absolute;
   content: "";
   left: 0;
+  top: -12px;
 }
 
 .recomend__item {
@@ -34,25 +37,53 @@
 }
 
 @media (min-width: @tablet-width) {
+
+.recomend {
+  padding: 0;
+}
   .recomend__item {
     width: (100%/3);
     text-align: center;
+
+    &:nth-child(2) {
+      order: 3;
   }
+
 
   .recomend-icon {
     position: relative;
     width: 75px;
     height: 75px;
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+
+    &:nth-child(2) {
+      padding-right: 10px;
+    }
   }
 
   .recomend-description {
     text-align: center;
+    margin-bottom: 50px;
   }
 
   .recomend-title {
-    text-align: center;
-    margin-bottom: 35px;
+    font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0 72px;
   }
+
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .recomend__item {
+    padding: 0 50px;
+}
 }
