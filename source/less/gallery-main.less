@@ -20,7 +20,6 @@
   position: absolute;
   content: "";
   height: 1px;
-  transform: translate(-50%, -50%);
   left: 50%;
   background-color: #c1bcbc;
   width: 100%;
@@ -81,16 +80,15 @@
 }
 
 .gallery__item-like::before {
-  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
   content: "";
   top: 0;
   left: 0;
-  transform: translateY(-50%);
   background: url("../img/icon-like.svg") no-repeat 50% 50%;
   width: 22px;
   height: 22px;
 }
-
 
 @media (min-width: @tablet-width) {
   .gallery-main {
@@ -103,10 +101,16 @@
 
     &--bigsize {
       width: 100%;
+      position: relative;
     }
 
     .gallery-main__item::after {
       display: none;
+    }
+
+    .gallery__item-like::before {
+      display: inline;
+      align-items: flex-end;
     }
 
     .gallery-main__item {

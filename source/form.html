@@ -49,24 +49,25 @@
         <h3 class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,
           а также о посещенных вами достопримечательностях</h3>
       </div>
-
       <form class="person person-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="person-form-wrap">
-          <fieldset class="feedback">
-            <legend class="page-title person__title">Оставьте свой отзыв</legend>
-            <p class="person__name">
-              <label for="name">имя*:</label>
-              <input type="name" name="name" placeholder="Петр">
-            </p>
-            <p class="person__lastname">
-              <label for="lastname">Фамилия*:</label>
-              <input type="lastname" name="lastname" placeholder="Иванов">
-            </p>
-            <p class="person__patronymic">
-              <label for="patronymic">Отчество:</label>
-              <input type="patronymic" name="patronymic" placeholder="Отчество">
-            </p>
-          </fieldset>
+          <div class="feedback-wrap">
+            <fieldset class="feedback">
+              <legend class="page-title person__title">Оставьте свой отзыв</legend>
+              <p class="person__name">
+                <label for="name">имя*:</label>
+                <input type="name" name="name" placeholder="Петр">
+              </p>
+              <p class="person__lastname">
+                <label for="lastname">Фамилия*:</label>
+                <input type="lastname" name="lastname" placeholder="Иванов">
+              </p>
+              <p class="person__patronymic">
+                <label for="patronymic">Отчество:</label>
+                <input type="patronymic" name="patronymic" placeholder="Отчество">
+              </p>
+            </fieldset>
+          </div>
           <fieldset class="contacts">
             <legend class="page-title contact__title">Контактная информация:</legend>
             <p class="contacts__number">
@@ -131,7 +132,6 @@
           </fieldset>
       </form>
     </main>
-
     <footer class="page-footer">
       <div class="page-footer__wrap">
         <div class="page-footer__visit">
@@ -194,5 +194,4 @@
   </div>
   </footer>
 </body>
-
 </html>

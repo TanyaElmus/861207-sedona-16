@@ -12,7 +12,7 @@
   position: relative;
 }
 
-.page-header__image:after {
+.page-header__image::after {
   position: absolute;
   content: "";
   bottom: 0;
@@ -45,7 +45,7 @@
     margin-bottom: 52px;
   }
 
-  .page-header__image:after {
+  .page-header__image::after {
     position: absolute;
     content: "";
     top: 95%;
@@ -66,13 +66,12 @@
     padding: 0 20px;
     width: 500px;
 
-  &--sedona {
+    &--sedona {
       padding: 0 45px;
       margin-top: 10px;
     }
+  }
 }
-}
-
 
 @media (min-width: @desktop-width) {
   .page-header__text-image {
@@ -80,7 +79,7 @@
     justify-content: center;
   }
 
-  .page-header__image:after {
+  .page-header__image::after {
     position: absolute;
     content: "";
     top: 95%;
