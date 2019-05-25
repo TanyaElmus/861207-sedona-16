@@ -22,7 +22,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">Фото и видео</a>
@@ -38,14 +38,14 @@
       </nav>
 
       <div class="page-header__image">
-        <img class="page-header__text-image" src="img/text-sedona-index.svg" width="460" height="350" alt="Седона">
+        <img class="page-header__text-image" src="img/text-sedona.svg" width="460" height="80" alt="Седона">
       </div>
     </header>
     </header>
 
     <main class="page-main">
       <div class="feedback">
-        <h2 class="page-title feedback__title">Оставьте свой отзыв</h2>
+        <h2 class="page-title feedback__title">Оставьте свой отзыв:</h2>
         <h3 class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них,
           а также о посещенных вами достопримечательностях</h3>
       </div>
@@ -55,16 +55,16 @@
           <fieldset class="feedback">
             <legend class="page-title person__title">Оставьте свой отзыв</legend>
             <p class="person__name">
-              <label for="name">имя:</label>
+              <label for="name">имя*:</label>
               <input type="name" name="name" placeholder="Петр">
             </p>
             <p class="person__lastname">
-              <label for="lastname">Фамилия:</label>
+              <label for="lastname">Фамилия*:</label>
               <input type="lastname" name="lastname" placeholder="Иванов">
             </p>
             <p class="person__patronymic">
               <label for="patronymic">Отчество:</label>
-              <input type="patronymic" name="patronymic" placeholder="Отвечство">
+              <input type="patronymic" name="patronymic" placeholder="Отчество">
             </p>
           </fieldset>
           <fieldset class="contacts">
@@ -72,9 +72,11 @@
             <p class="contacts__number">
               <label for="number">Контактный телефон*:</label>
               <input type="number" name="number" placeholder="Введите телефон">
-              <p class="contacts__email">
-                <label for="number">Электронная почта*:</label>
-                <input type="email" name="email" placeholder="Введите e-mail">
+            </p>
+            <p class="contacts__email">
+              <label for="number">Электронная почта*:</label>
+              <input type="email" name="email" placeholder="Введите e-mail">
+            </p>
           </fieldset>
           <fieldset class="feeling">
             <legend class="page-title feeling__title">ВАше Общее впечатление:</legend>
@@ -86,12 +88,12 @@
               </li>
               <li class="feeling-option">
                 <input class="visually-hidden feeling-input feeling-input-radio" type="radio" name="negative"
-                  value="negative" id="feeling-negative" checked>
+                  value="negative" id="feeling-negative">
                 <label for="feeling-negative">Скорее отрицательное</label>
               </li>
               <li class="feeling-option">
                 <input class="visually-hidden feeling-input feeling-input-radio" type="radio" name="difficult-to-answer"
-                  value="difficult-to-answer" id="feeling-difficult-to-answer" checked>
+                  value="difficult-to-answer" id="feeling-difficult-to-answer">
                 <label for="feeling-difficult-to-answer">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -117,15 +119,15 @@
               </li>
               <li class="visited-option">
                 <input class="visually-hidden visited-input-checkbox" type="checkbox" name="red-rocks"
-                  id="visited-red-rocks" checked>
+                  id="visited-red-rocks">
                 <label for="visited-red-rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="emotions">
             <legend class="page-title emotions-title">Опишите свои эмоции:</legend>
-            <textarea name="text-letter" placeholder="Опишите подробно все свои восторги" rows="5"></textarea>
-            <button class="send-feedback__button" type="button">ОТПРАВИТЬ ОТЗЫВ</button>
+            <textarea name="text-letter" placeholder="Опишите подробно все свои восторги"></textarea>
+            <button class="send-feedback__button" type="button">отправить отзыв</button>
           </fieldset>
       </form>
     </main>

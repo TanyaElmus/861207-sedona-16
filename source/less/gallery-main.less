@@ -4,8 +4,8 @@
   padding: 0 20px;
 }
 
-.gallery__title{
-margin-bottom: 26px;
+.gallery__title {
+  margin-bottom: 26px;
 }
 
 .gallery-main__list {
@@ -13,6 +13,17 @@ margin-bottom: 26px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.gallery-main__item::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background-color: #c1bcbc;
+  width: 100%;
 }
 
 .gallery-main__item {
@@ -60,20 +71,7 @@ margin-bottom: 26px;
 
 .gallery__item-like {
   position: relative;
-}
-
-.gallery__item-like:after {
-  position: absolute;
-  content: "";
-  top:0;
-  left:0;
-  transform: translateY(-50%);
-  background: url("../img/icon-like.svg") no-repeat 50% 50%;
-  width: 22px;
-  height:22px;
-}
-
-.gallery__item-like--number {
+  vertical-align: middle;
   font-size: 14px;
   line-height: 24px;
   font-weight: 800;
@@ -82,6 +80,18 @@ margin-bottom: 26px;
   color: #000000;
 }
 
+.gallery__item-like::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  background: url("../img/icon-like.svg") no-repeat 50% 50%;
+  width: 22px;
+  height: 22px;
+}
+
+
 @media (min-width: @tablet-width) {
   .gallery-main {
     padding: 0 60px;
@@ -89,17 +99,14 @@ margin-bottom: 26px;
 
   .gallery-main__item {
     width: 50%;
+    background-color: #f2f2f2;
 
     &--bigsize {
       width: 100%;
     }
 
-    .gallery__title {
-      font-size: 30px;
-      line-height: 26px;
-      font-weight: 800;
-      padding: 0;
-      margin: 0;
+    .gallery-main__item::after {
+      display: none;
     }
 
     .gallery-main__item {
@@ -107,6 +114,10 @@ margin-bottom: 26px;
       display: flex;
       flex-wrap: wrap;
       width: (100%/2);
+    }
+
+    .gallery__list__description {
+      padding: 0 80px;
     }
 
     .gallery__item-author-image {
@@ -121,6 +132,10 @@ margin-bottom: 26px;
 
       &--bigsize {
         width: 100%;
+      }
+
+      .gallery-main__item {
+        background-color: transparent;
       }
     }
   }
