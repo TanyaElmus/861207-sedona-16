@@ -1,6 +1,6 @@
 .page-footer__visit {
   text-align: center;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 
 .page-footer__visit-sedona {
@@ -23,11 +23,13 @@
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
+  padding-right: 12px;
 }
 
 .page-footer__social {
   display: flex;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .social__list {
@@ -43,8 +45,8 @@
 
 .social__list li {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 51px;
+  height: 51px;
   text-align: center;
   background-color: @base-color;
   border: 2px solid white;
@@ -60,8 +62,29 @@
 @media (min-width: @tablet-width) {
   .page-footer__wrap {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 0 60px;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .page-footer__visit {
+    margin-bottom: 4px;
+  }
+
+  .page-footer__visit-sedona {
+    margin-top: 5px;
+  }
+
+  .social__item {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrap {
+    padding: 0 157px;
+    margin: 0;
   }
 }

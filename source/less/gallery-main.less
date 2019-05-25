@@ -4,11 +4,25 @@
   padding: 0 20px;
 }
 
+.gallery__title {
+  margin-bottom: 26px;
+}
+
 .gallery-main__list {
   padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.gallery-main__item::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  left: 50%;
+  background-color: #c1bcbc;
+  width: 100%;
 }
 
 .gallery-main__item {
@@ -21,12 +35,18 @@
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .gallery__item {
   list-style: none;
   width: 100%;
   padding: 0;
+}
+
+.gallery__item-author-image {
+  margin-bottom: 12px;
 }
 
 .gallery__item-author-text {
@@ -36,7 +56,6 @@
   font-weight: 800;
   padding: 0;
   margin: 0;
-  margin-bottom: 14px;
 }
 
 .gallery__item-author-name {
@@ -45,14 +64,30 @@
   font-weight: 400;
   padding: 0;
   margin: 0;
+  display: block;
+  width: 100%;
 }
 
-.gallery__item-like--number {
+.gallery__item-like {
+  position: relative;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 24px;
   font-weight: 800;
   padding: 0;
   margin: 0;
+  color: #000000;
+}
+
+.gallery__item-like::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url("../img/icon-like.svg") no-repeat 50% 50%;
+  width: 22px;
+  height: 22px;
 }
 
 @media (min-width: @tablet-width) {
@@ -62,17 +97,20 @@
 
   .gallery-main__item {
     width: 50%;
+    background-color: #f2f2f2;
 
     &--bigsize {
       width: 100%;
+      position: relative;
     }
 
-    .gallery__title {
-      font-size: 30px;
-      line-height: 26px;
-      font-weight: 800;
-      padding: 0;
-      margin: 0;
+    .gallery-main__item::after {
+      display: none;
+    }
+
+    .gallery__item-like::before {
+      display: inline;
+      align-items: flex-end;
     }
 
     .gallery-main__item {
@@ -80,6 +118,10 @@
       display: flex;
       flex-wrap: wrap;
       width: (100%/2);
+    }
+
+    .gallery__list__description {
+      padding: 0 80px;
     }
 
     .gallery__item-author-image {
@@ -94,6 +136,10 @@
 
       &--bigsize {
         width: 100%;
+      }
+
+      .gallery-main__item {
+        background-color: transparent;
       }
     }
   }

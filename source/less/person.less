@@ -1,0 +1,134 @@
+.person {
+  display: flex;
+}
+
+.person fieldset {
+  border: none;
+}
+
+.feedback label,
+.contacts label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.person legend {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.person input {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: #000000;
+  padding: 25px 0 22px 20px;
+  background-color: #f2f2f2;
+  border: none;
+  width: 100%;
+}
+
+.feeling-input-radio + label::before {
+  content: "";
+  left: -40px;
+  top: -16px;
+  position: absolute;
+  width: 57px;
+  height: 57px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.feeling-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #333333;
+  left: -22px;
+  top: 0;
+  border-radius: 50%;
+}
+
+.feeling-list label,
+.visited-list label {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 40px;
+  padding-left: 25px;
+}
+
+.visited-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 44px;
+  background-color: #f2f2f2;
+  border-radius: 2px;
+  left: -40px;
+  top: -12px;
+}
+
+.visited-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 17px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: -22px;
+  top: 0;
+}
+
+.emotions textarea {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  color: #000000;
+  background-color: #f2f2f2;
+  width: 100%;
+  border: none;
+  padding: 20px 20px 50px;
+  margin-bottom: 45px;
+}
+
+.send-feedback__button {
+  display: block;
+  justify-content: center;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  border: none;
+  padding: 16px 20px;
+  font-weight: 800;
+  width: 280px;
+  text-transform: uppercase;
+  background-color: @base-color;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.person fieldset::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  background-color: #c1bcbc;
+  width: 100%;
+}

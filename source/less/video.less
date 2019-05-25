@@ -1,0 +1,32 @@
+
+.video {
+  padding: 0 60px;
+}
+
+.video__discription {
+  color: #333333;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 25px;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+
+.video__play {
+  background: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 35px;
+  height: 200px;
+}
+
+@media (min-width: @tablet-width) {
+  .video__play {
+    background: url("../img/video-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+  }
+}
